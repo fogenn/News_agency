@@ -42,6 +42,10 @@ ul {
   margin: 0;
 }
 
+address {
+  font-style: normal;
+}
+
 .custom-link {
   color: #fff;
   border-bottom: 1px solid;
