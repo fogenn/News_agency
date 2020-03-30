@@ -83,7 +83,7 @@
     </div>
   </header>
 
-  <main class="container main-content clearfix">
+  <main class="container main-content">
     <section class="news-day">
       <h2 class="news-title">Новости дня</h2>
 
@@ -349,8 +349,8 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <nav class="footer-menu clearfix">
+    <div class="container clearfix">
+      <nav class="footer-menu">
         <ul class="footer-menu-list">
           <li class="footer-menu-list-item">
             <a href="#">Главная </a>
@@ -381,12 +381,13 @@
           </li>
         </ul>
         <!-- /.footer-menu-list -->
+      </nav>
+      <!-- /.footer-menu -->
+      <div class="footer-about">
+        <a class="footer-logo" href="#">
+          <img src="img/logo-footer.png" alt="Новостное агенство">
+        </a>
         <ul class="about-agency-list">
-          <li class="about-agency-list-item clearfix">
-            <a href="#">
-              <img class="header-logo" src="img/logo-footer.png" alt="Новостное агенство">
-            </a>
-          </li>
           <li class="about-agency-list-item">
             <a href="#">
               Об агенстве
@@ -404,54 +405,53 @@
           </li>
         </ul>
         <!-- /.about-agency-list -->
-        <address class="social">
-          <ul class="social-link">
-            <li class="social-link-item">
-              <a href="#">
-                <img src="img/icons/vk.png" alt="" class="social-link-item-icon">
-              </a>
-            </li>
-            <li class="social-link-item">
-              <a href="#">
-                <img src="img/icons/fb.png" alt="" class="social-link-item-icon">
-              </a>
-            </li>
-            <li class="social-link-item">
-              <a href="#">
-                <img src="img/icons/tw.png" alt="" class="social-link-item-icon">
-              </a>
-            </li>
-            <li class="social-link-item">
-              <a href="#">
-                <img src="img/icons/inst.png" alt="" class="social-link-item-icon">
-              </a>
-            </li>
-          </ul>
-          <!-- /.social-link -->
-
-          <ul class="social-phoneEmail">
-            <li class="social-phoneEmail-item">
-              <a href="#">
-                <img class="icon-phone" src="img/icons/call-answer.png" alt="Телефон +7 (499) 995-55-55">
+      </div>
+      <!-- /.footer-about -->
+      <div class="social">
+        <ul class="social-link">
+          <li class="social-link-item vk">
+            <a class="" href="#" aria-label="ВКонтакте">
+            </a>
+          </li>
+          <li class="social-link-item fb">
+            <a href="#" aria-label="Фейсбук">
+            </a>
+          </li>
+          <li class="social-link-item tw">
+            <a href="#" aria-label="Твиттер">
+            </a>
+          </li>
+          <li class="social-link-item inst">
+            <a href="#" aria-label="Инстаграм">
+            </a>
+          </li>
+        </ul>
+        <!-- /.social-link -->
+        
+        <address class="address">
+          <ul class="address-phone-email">
+            <li class="address-phone-email-item phone">
+              <a href="tel:#" aria-label="Телефон">
                 +7 (499) 995-55-55
               </a>
             </li>
-            <li class="social-phoneEmail-item">
-              <a href="#">
-                <img class="icon-Email" src="img/icons/envelope.png" alt="Email info@agency.ru">
+            <li class="address-phone-email-item email">
+              <a href="mailto:#" aria-label="Email">
                 info@agency.ru
               </a>
             </li>
           </ul>
-          <!-- /.social-phoneEmail -->
+          <!-- /.address-phoneEmail -->
         </address>
-      </nav>
-      <!-- /.footer-menu -->
+        <!-- /.address -->
+      </div>
+      <!-- /.social -->
     </div>
+    <!-- /.container -->
 
-    <div class="copyright">
+    <p class="copyright">
       © Новостное агентство, 2017-2018 все права защищены
-    </div>
+    </p>
   </footer>
 </body>
 

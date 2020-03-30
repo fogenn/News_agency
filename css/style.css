@@ -23,7 +23,7 @@ img {
 }
 
 a {
-       
+
   color: #fff;
   text-decoration: none;
 }
@@ -230,12 +230,14 @@ address {
 }
 
 .menu-item:not(:last-child)::after {
-  margin-right: 15px;
   content: '/';
   position: relative;
   color: #e1e1e5;
-  left: 0;
-  padding-left: 15px;
+  left: 15px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* main-content */
@@ -251,7 +253,7 @@ address {
   background-color: #fff;
 }
 
-.news-day-list{
+.news-day-list {
   padding: 25px 20px;
 }
 
@@ -342,7 +344,7 @@ address {
   background-color: rgba(0, 0, 0, 0.07);
 }
 
-.news-first .news-category{
+.news-first .news-category {
   margin-bottom: 25px;
   color: #fff;
 }
@@ -359,10 +361,10 @@ address {
   float: left;
 }
 
-.news-first .news-time{
+.news-first .news-time {
   float: left;
   background-image: url('../img/icons/clock-white.png');
-  background-size: 10px 10px; 
+  background-size: 10px 10px;
 }
 
 .news-photo {
@@ -378,7 +380,7 @@ address {
   margin-top: 20px;
 }
 
-.news-photo-tiles{
+.news-photo-tiles {
   width: 220px;
   height: 140px;
   object-fit: cover;
@@ -403,11 +405,11 @@ address {
   float: left;
 }
 
-.news-wrapper-tiles .news-comments{
+.news-wrapper-tiles .news-comments {
   float: left;
 }
 
-.news-wrapper-tiles .news-time{
+.news-wrapper-tiles .news-time {
   float: left;
   margin-left: 20px;
 }
@@ -434,7 +436,7 @@ address {
 
 .wrap-news-bottom .news-first {
   width: 570px;
-  height: 395px;
+  min-height: 395px;
   float: left;
 }
 
@@ -470,23 +472,23 @@ address {
 }
 
 .footer {
+  padding-top: 50px;
   font-size: 16px;
   background-color: #00122f;
   color: #fff;
+  clear: both;
 }
 
 .footer-menu {
-  padding-top: 50px;
-  margin-bottom: 59px;
+  float: left;
+  margin-right: 200px;
 }
 
 .footer-menu-list {
-  float: left;
   margin: 0;
   list-style: none;
   columns: 2;
   width: 220px;
-  margin-right: 200px;
 }
 
 .footer-menu-list-item {
@@ -495,8 +497,18 @@ address {
   margin-bottom: 15px;
 }
 
-.about-agency-list {
+.footer-logo {
+  display: inline-block;
+  width: 121px;
+  margin-bottom: 15px;
+  line-height: 0;
+}
+
+.footer-about {
   float: left;
+}
+
+.about-agency-list {
   list-style: none;
 }
 
@@ -507,26 +519,70 @@ address {
 .social {
   float: right;
 }
- 
+
 .social-link {
   margin-bottom: 40px;
-  width: 225px;
-  columns: 4;
   list-style: none;
 }
 
-.social-phoneEmail {
+.social-link-item {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-size: 40px 40px;
+}
+
+.social-link-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.vk {
+  background: transparent url('../img/icons/vk.png') center no-repeat;
+}
+
+.fb {
+  background: transparent url('../img/icons/fb.png') center no-repeat;
+}
+
+.tw {
+  background: transparent url('../img/icons/tw.png') center no-repeat;
+}
+
+.inst {
+  background: transparent url('../img/icons/inst.png') center no-repeat;
+}
+
+.address {
+  float: left;
+}
+
+.address-phone-email {
   font-size: 18px;
   list-style: none;
 }
 
-.icon-phone,
-.icon-Email {
-  margin-right: 15px;
+.address-phone-email-item {
+  padding-left: 35px;
 }
 
-.social-phoneEmail-item:not(:last-child) {
+.address-phone-email-item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.phone {
+  background: url('../img/icons/call-answer.png') no-repeat;
+  background-position: left;
+  background-size: 15px 15px;
+}
+
+.email {
+  background: url('../img/icons/envelope.png') no-repeat;
+  background-position: left;
+  background-size: 13px 11px;
+}
+
+.footer .container {
+  margin-bottom: 59px;
 }
 
 .copyright {
@@ -535,4 +591,7 @@ address {
   color: #fff;
   text-align: center;
   padding: 20px 0;
+  margin-top: 59;
+  margin-bottom: 0;
+  clear: both;
 }
