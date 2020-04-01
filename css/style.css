@@ -520,20 +520,25 @@ address {
   float: right;
 }
 
-.social-link {
+.social-links {
   margin-bottom: 40px;
   list-style: none;
 }
 
-.social-link-item {
+.social-links-item {
   display: inline-block;
+}
+
+
+.social-links-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social-link {
+  display: block;
   height: 40px;
   width: 40px;
   background-size: 40px 40px;
-}
-
-.social-link-item:not(:last-child) {
-  margin-right: 20px;
 }
 
 .vk {
@@ -561,12 +566,12 @@ address {
   list-style: none;
 }
 
-.address-phone-email-item {
-  padding-left: 35px;
-}
-
 .address-phone-email-item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.address-phone-email-links {
+  padding-left: 35px;
 }
 
 .phone {
