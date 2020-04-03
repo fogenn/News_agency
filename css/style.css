@@ -538,23 +538,24 @@ address {
   display: block;
   height: 40px;
   width: 40px;
+  background: transparent center no-repeat;
   background-size: 40px 40px;
 }
 
 .vk {
-  background: transparent url('../img/icons/vk.png') center no-repeat;
+  background: url('../img/icons/vk.png');
 }
 
 .fb {
-  background: transparent url('../img/icons/fb.png') center no-repeat;
+  background: url('../img/icons/fb.png');
 }
 
 .tw {
-  background: transparent url('../img/icons/tw.png') center no-repeat;
+  background: url('../img/icons/tw.png');
 }
 
 .inst {
-  background: transparent url('../img/icons/inst.png') center no-repeat;
+  background: url('../img/icons/inst.png');
 }
 
 .address {
@@ -571,18 +572,17 @@ address {
 }
 
 .address-phone-email-links {
+  background-position: left;
   padding-left: 35px;
 }
 
 .phone {
   background: url('../img/icons/call-answer.png') no-repeat;
-  background-position: left;
   background-size: 15px 15px;
 }
 
 .email {
   background: url('../img/icons/envelope.png') no-repeat;
-  background-position: left;
   background-size: 13px 11px;
 }
 
