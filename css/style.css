@@ -422,7 +422,48 @@ address {
 
 .ads-photo:not(:last-child) {
   display: inline-block;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.ads__price-curr {
+  /* border: 1px solid #000; */
+  background-color: #fff;
+  color: #000;
+  line-height: 25px;
+}
+
+.ads__price-curr__title {
+  border-top: #e5e5e5 solid 1px;
+  border-bottom: #e5e5e5 solid 1px;
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  margin: 0;
+}
+
+.ads__price-curr__list {
+  padding: 10px;
+}
+
+.ads__price-curr__position {
+  display: block;
+  background-repeat: no-repeat;
+  padding-left: 35px;
+  background-position: left;
+  background-size: auto 100%;
+}
+
+.ads__price-curr__position:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+
+.eur {
+  background-image: url('../img/icons/european-union.svg');
+}
+
+.usd {
+  background-image: url('../img/icons/united-states.svg');
 }
 
 .bottom-block {
@@ -573,16 +614,17 @@ address {
 
 .address-phone-email-links {
   background-position: left;
+  background-repeat: no-repeat;
   padding-left: 35px;
 }
 
 .phone {
-  background: url('../img/icons/call-answer.png') no-repeat;
+  background-image: url('../img/icons/call-answer.png');
   background-size: 15px 15px;
 }
 
 .email {
-  background: url('../img/icons/envelope.png') no-repeat;
+  background-image: url('../img/icons/envelope.png');
   background-size: 13px 11px;
 }
 
