@@ -59,7 +59,8 @@ address {
 
 .container {
   margin: 0 auto;
-  width: 960px;
+  max-width: 1000px;
+  padding: 0 20px;
 }
 
 /*header intro*/
@@ -71,36 +72,47 @@ address {
 }
 
 .header-intro {
-  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
   color: #fff;
+  
+}
+
+.header-bgc {
   background-color: #00122f;
 }
 
+.header-intro.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .intro-desc {
-  float: left;
   margin: 0;
 }
 
 .intro-time {
-  float: right;
+  
 }
 
 /*header infomation*/
 
 .header-wrapper {
-  padding: 40px 0 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 35px;
 }
 
 .header-logo {
   width: 121px;
-  float: left;
-  margin-right: 40px;
 }
 
 .header-information {
   padding: 5px;
   margin: 0;
-  float: left;
+  /* float: left; */
   color: #91919f;
 }
 
@@ -115,6 +127,7 @@ address {
   background-repeat: no-repeat;
   background-size: 9px 5px;
 
+  -ms-expand: ;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -168,7 +181,6 @@ address {
 .header-search {
   position: relative;
   width: 270px;
-  float: right;
   font-size: 14px;
 }
 
@@ -211,39 +223,54 @@ address {
 }
 
 .menu {
+  width: 100%;
   padding-top: 30px;
-  clear: both;
+  /* clear: both; */
 }
 
 .menu-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .menu-item {
-  display: inline-block;
+  
+  /* display: inline-block; */
 }
 
 .menu-item a {
   color: #000;
 }
 
-.menu-item:not(:last-child)::after {
+/* .menu-item:not(:last-child)::after {
+  
   content: '/';
   position: relative;
   color: #e1e1e5;
-  left: 15px;
+ 
+} */
+
+/* .menu-item:not(:last-child) a{
+ 
+} */
+
+.menu-sep {
+  color: #e1e1e5;
 }
 
-.menu-item:not(:last-child) {
-  margin-right: 30px;
+.menu-sep:last-child {
+  display: none;
 }
 
 /* main-content */
 
 .main-content {
-  padding: 20px 0 60px;
+  padding-top: 20px;
+  padding-bottom: 60px;
 }
 
 .news-day {
@@ -641,4 +668,15 @@ address {
   margin-top: 59;
   margin-bottom: 0;
   clear: both;
+}
+
+
+@media (max-width: 998px) {
+  .search {
+    display: none;
+  }
+  .header-search {
+    display: inline-block;
+    width: 50px;
+  }
 }
