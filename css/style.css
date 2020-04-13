@@ -91,9 +91,9 @@ address {
   margin: 0;
 }
 
-.intro-time {
+/* .intro-time {
   
-}
+} */
 
 /*header infomation*/
 
@@ -101,6 +101,8 @@ address {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: center;
+  align-items: center;
   padding-top: 40px;
   padding-bottom: 35px;
 }
@@ -112,7 +114,14 @@ address {
 .header-information {
   padding: 5px;
   margin: 0;
-  /* float: left; */
+  color: #91919f;
+}
+
+.header-information__mob {
+  display: none;
+  justify-content: center;
+  width: 100%;
+  padding: 35px 0;
   color: #91919f;
 }
 
@@ -127,7 +136,6 @@ address {
   background-repeat: no-repeat;
   background-size: 9px 5px;
 
-  -ms-expand: ;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -180,12 +188,11 @@ address {
 
 .header-search {
   position: relative;
-  width: 270px;
   font-size: 14px;
 }
 
 .search {
-  width: 100%;
+  width: 270px;
   padding: 12px 50px 12px 20px;
   border: 0;
   font: inherit;
@@ -202,13 +209,6 @@ address {
   outline: none;
 }
 
-.search-label {
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  font-size: 0;
-}
-
 .search-submit {
   position: absolute;
   top: 14px;
@@ -219,6 +219,50 @@ address {
   width: 16px;
   background: transparent url('../img/icons/search.png') center no-repeat;
   background-size: contain;
+  outline: none;
+}
+.wrap-search__mob {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-style: none;
+  border-radius: 22px;
+  background-color: #f3f3f3;
+}
+
+.header-search__mob {
+  display: none;
+  position: relative;
+  font-size: 14px;
+}
+
+.search__mob {
+  /* width: 270px; */
+  width: 270px;
+  display: none;
+  padding-left: 20px;
+  width: 80%;
+  border: 0;
+  font: inherit;
+  color: #000;
+  background-color: transparent;
+  border-radius: 22px;
+  outline: none;
+}
+
+.search-submit__mob {
+  /* position: absolute; */
+  right: auto;
+  border: none;
+  padding: 0;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  max-width: 100%;
+  background: transparent url('../img/icons/search.png') center no-repeat;
+  background-color: #f3f3f3;
+  background-size: 16px 16px;
   outline: none;
 }
 
@@ -237,10 +281,10 @@ address {
   list-style: none;
 }
 
-.menu-item {
+/* .menu-item {
   
-  /* display: inline-block; */
-}
+  display: inline-block;
+} */
 
 .menu-item a {
   color: #000;
@@ -266,17 +310,23 @@ address {
   display: none;
 }
 
+.menu-burger {
+  display: none;
+}
+
 /* main-content */
 
 .main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 60px;
 }
 
 .news-day {
-  float: left;
+  
   width: 250px;
-  margin-right: 20px;
   background-color: #fff;
 }
 
@@ -313,7 +363,6 @@ address {
 
 .news-category {
   font-size: 12px;
-  float: left;
   color: #91919f;
 }
 
@@ -328,7 +377,6 @@ address {
 }
 
 .news-time {
-  float: right;
   margin-left: 20px;
   padding-left: 15px;
   background-image: url('../img/icons/clock.png');
@@ -336,7 +384,6 @@ address {
 }
 
 .news-comments {
-  float: right;
   margin-left: 20px;
   padding-left: 15px;
   background-image: url('../img/icons/comments.png');
@@ -360,13 +407,17 @@ address {
 /* main news, tiles news */
 
 .news-main {
-  float: left;
-  width: 460px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 460px;
 }
 
 .news-first {
+  display: block;
   position: relative;
   padding: 115px 20px 40px;
+  width: 100%;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.07);
 }
@@ -385,11 +436,9 @@ address {
 
 .news-date {
   font-size: 12px;
-  float: left;
 }
 
 .news-first .news-time {
-  float: left;
   background-image: url('../img/icons/clock-white.png');
   background-size: 10px 10px;
 }
@@ -398,12 +447,18 @@ address {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   height: 100%;
+  overflow: hidden;
   z-index: -1;
   object-fit: cover;
 }
 
 .news-wrapper-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-self: stretch;
   margin-top: 20px;
 }
 
@@ -424,17 +479,17 @@ address {
   font-weight: bold;
 }
 
-.news-wrapper-tiles .news:nth-child(even) {
+/* .news-wrapper-tiles .news:nth-child(even) {
   float: right;
-}
+} */
 
-.news-wrapper-tiles .news:nth-child(odd) {
+/* .news-wrapper-tiles .news:nth-child(odd) {
   float: left;
-}
+} */
 
-.news-wrapper-tiles .news-comments {
+/* .news-wrapper-tiles .news-comments {
   float: left;
-}
+} */
 
 .news-wrapper-tiles .news-time {
   float: left;
@@ -443,7 +498,6 @@ address {
 
 .ads {
   color: #fff;
-  float: right;
   width: 210px;
 }
 
@@ -498,14 +552,16 @@ address {
 }
 
 .wrap-news-bottom {
-  padding-top: 10px;
-  clear: both;
+  display: flex;
+  width: 100%;
+  padding-top: 20px;
+  justify-content: space-between;
 }
 
 .wrap-news-bottom .news-first {
   width: 570px;
   min-height: 395px;
-  float: left;
+
 }
 
 .annotation {
@@ -521,7 +577,6 @@ address {
 
 .wrap-news-bottom .news-day {
   margin: 0;
-  float: right;
   width: 390px;
 }
 
@@ -671,12 +726,82 @@ address {
 }
 
 
-@media (max-width: 998px) {
-  .search {
+@media (max-width: 989px) {
+  .header-search {
     display: none;
   }
-  .header-search {
+  .header-search__mob {
     display: inline-block;
-    width: 50px;
+  }
+  .news-day,
+  .news-main {
+    flex-grow: 1;
+  }
+  .news-day {
+    margin-right: 20px;
+  }
+  .news-day-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .news-wrapper-tiles .news:nth-child(3n) {
+    align-self: flex-end;
+  }
+  .news-wrapper-tiles .news:nth-child(4n) {
+    align-self: flex-end;
+  }
+  .ads {
+    order: 1;
+  }
+}
+
+@media (max-width: 860px) {
+  .main-content{
+    padding-top: 0;
+  }
+  .header-information__mob{
+    display: flex;
+  }
+  .header-wrapper {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .header-information,
+  .menu {
+    display: none;
+  }
+  .menu-burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+
+  .menu-burger span {
+    position: absolute;
+    background-color: #000;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+  }
+
+  .menu-burger:before,
+  .menu-burger:after  {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+
+  .menu-burger:before {
+    top: 0;
+  }
+
+  .menu-burger:after {
+    bottom: 0;
   }
 }

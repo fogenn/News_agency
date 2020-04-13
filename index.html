@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Start Template for Skillbox.</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="theme-color" content="#">
 
@@ -25,6 +25,10 @@
     </div>
 
     <div class="container header-wrapper">
+      <div class="menu-burger">
+        <span></span>
+      </div>
+
       <img class="header-logo" src="img/logo.png" alt="Новостное агенство">
 
       <p class="header-information">
@@ -46,6 +50,13 @@
       <form class="header-search" action="#" method="get">
         <input class="search" name="search" type="text" placeholder="Поиск по сайту">
         <button class="search-submit" type="submit" aria-label="Найти"></button>
+      </form>
+
+      <form class="header-search__mob" action="#" method="get">
+        <div class="wrap-search__mob">
+          <input class="search__mob" name="search" type="text" placeholder="Поиск по сайту">
+          <button class="search-submit__mob" type="submit" aria-label="Найти"></button>
+        </div>
       </form>
 
       <nav class="menu">
@@ -91,7 +102,17 @@
     </div>
   </header>
 
+  
   <main class="container main-content">
+    <div class="header-information__mob">
+        <time class="header-date" datetime="2020-02-23T16:34">
+          <span class="header-day">23 февраля, воск</span>
+          <span class="header-time">16:34</span>
+        </time>
+    
+        <span class="header-weather">+22 &deg;C</span>
+    </div>
+    
     <section class="news-day">
       <h2 class="news-title">Новости дня</h2>
 
@@ -191,7 +212,8 @@
     </section>
 
     <section class="news-main">
-      <article class="news-first clearfix">
+      <article class="news-first">
+        <img class="news-photo" src="img/photo1.jpg" alt="Крым">
         <a href="#" class="news-category">Политика</a>
         <a href="#" class="news-link">
           В Крыму отреагировали на&nbsp;слова Кравчука о&nbsp;возврате полуострова
@@ -202,10 +224,9 @@
           </time>
           <span class="news-time">16:34</span>
         </p>
-        <img class="news-photo" src="img/photo1.jpg" alt="Крым">
       </article>
 
-      <div class="news-wrapper-tiles clearfix">
+      <div class="news-wrapper-tiles">
         <article class="news">
           <img class="news-photo-tiles" src="img/photoTiles1.jpg" alt="">
           <a href="#" class="news-link">
@@ -297,7 +318,7 @@
       </div>
     </aside>
 
-    <section class="wrap-news-bottom clearfix">
+    <section class="wrap-news-bottom ">
       <article class="news-first clearfix">
         <a href="#" class="news-category">Политика</a>
         <a href="#" class="news-link">
