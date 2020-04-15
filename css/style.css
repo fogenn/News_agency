@@ -491,19 +491,31 @@ address {
   float: left;
 } */
 
-.news-wrapper-tiles .news-time {
+/* .news-wrapper-tiles .news-time {
   float: left;
   margin-left: 20px;
-}
+} */
 
 .ads {
-  color: #fff;
-  width: 210px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 215px;
+}
+
+.ads-photo {
+  height: 400px;
+  overflow: hidden;
+}
+
+.ads-photo img{
+  object-fit: cover;
+  object-position: center;
+  
 }
 
 .ads-photo:not(:last-child) {
   display: inline-block;
-  margin-bottom: 20px;
 }
 
 .ads__price-curr {
@@ -752,7 +764,15 @@ address {
     align-self: flex-end;
   }
   .ads {
+    margin-top: 25px;
+    flex-direction: row;
+    flex-shrink: 0;
+    width: 100%;
     order: 1;
+    overflow-x: scroll;
+  }
+  .wrap-news-bottom {
+    order: 2;
   }
 }
 
