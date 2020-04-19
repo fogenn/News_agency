@@ -60,7 +60,6 @@ address {
 .container {
   margin: 0 auto;
   max-width: 1000px;
-  min-width: 320px;
   padding: 0 20px;
 }
 
@@ -209,6 +208,16 @@ address {
 .header-search {
   position: relative;
   font-size: 14px;
+}
+
+.wrap-search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-style: none;
+  border-radius: 22px;
+  background-color: #f3f3f3;
 }
 
 .search {
@@ -643,6 +652,8 @@ address {
 }
 
 .social {
+  display: flex;
+  flex-direction: column;
 }
 
 .social-links {
@@ -867,6 +878,18 @@ address {
   .footer__wrap {
     justify-content: space-evenly;
   }
+}
+
+@media (max-width: 705px) {
+  .social {
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+ 
 }
 
 @media (max-width: 650px) {
