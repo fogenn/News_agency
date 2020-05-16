@@ -39,8 +39,10 @@
       <div class="menu-burger">
         <span></span>
       </div>
-
-      <img class="header-logo" src="img/logo.png" alt="Новостное агенство">
+      <picture>
+        <source media="(min-width: 989px)" srcset="img/logo.png">
+        <img class="header-logo" src="img/logo-mob.png" alt="Новостное агенство">
+      </picture>
 
       <p class="header-information">
         <label class="select-wrapper">
@@ -57,7 +59,7 @@
 
         <span class="header-weather">+22 &deg;C</span>
       </p>
-
+      <!-- TODO: переделать форму  -->
       <form class="header-search" action="#" method="get">
         <div class="wrap-search">
           <input class="search" name="search" type="text" placeholder="Поиск по сайту">
@@ -126,14 +128,12 @@
         <span class="header-weather">+22 &deg;C</span>
 
         <div class="price-curr price-curr__mob">
-  
           <!-- <span class="price-curr__position eur">
             Euro
           </span>
           <span class="price-curr__position usd">
             Dollar
           </span> -->
-
       </div>
     </div>
     
@@ -147,7 +147,7 @@
             победу российской сборной
             над Египтом на ЧМ-2018
           </a>
-          <p class="news-info clearfix">
+          <p class="news-info">
             <a href="#" class="news-category">ЧМ по футболу</a>
             <span class="news-comments" aria-label="Количество комментариев">15</span>
             <time class="news-time" datetime="2020-02-23T16:34">
@@ -162,7 +162,7 @@
             заморозить активы «Газпрома»
             в Великобритании
           </a>
-          <p class="news-info clearfix">
+          <p class="news-info">
             <a href="#" class="news-category">Политика</a>
             <span class="news-comments" aria-label="Количество комментариев">15</span>
             <time class="news-time" datetime="2020-02-23T16:34">
@@ -177,7 +177,7 @@
             оборудовать общественный
             транспорт кондиционерами
           </a>
-          <p class="news-info clearfix">
+          <p class="news-info">
             <a href="#" class="news-category">Транспорт</a>
             <span class="news-comments" aria-label="Количество комментариев">15</span>
             <time class="news-time" datetime="2020-02-23T16:34">
@@ -192,7 +192,7 @@
             временно закроются из-за
             непогоды
           </a>
-          <p class="news-info clearfix">
+          <p class="news-info">
             <a href="#" class="news-category">Погода</a>
             <span class="news-comments" aria-label="Количество комментариев">15</span>
             <time class="news-time" datetime="2020-02-23T16:34">
@@ -207,7 +207,7 @@
             Щелковского шоссе завершится
             в июне
           </a>
-          <p class="news-info clearfix">
+          <p class="news-info">
             <a href="#" class="news-category">Транспорт</a>
             <span class="news-comments" aria-label="Количество комментариев">15</span>
             <time class="news-time" datetime="2020-02-23T16:34">
@@ -222,7 +222,7 @@
             популярное мороженое
             у болельщиков ЧМ-2018
           </a>
-          <p class="news-info clearfix">
+          <p class="news-info">
             <a href="#" class="news-category">ЧМ по футболу</a>
             <span class="news-comments" aria-label="Количество комментариев">15</span>
             <time class="news-time" datetime="2020-02-23T16:34">
@@ -327,7 +327,7 @@
     </aside>
 
     <section class="wrap-news-bottom">
-      <article class="news-first clearfix">
+      <article class="news-first">
         <a href="#" class="news-category">Политика</a>
         <a href="#" class="news-link">
           Пекин обвинил Вашингтон
@@ -358,7 +358,7 @@
               временно закроются из-за
               непогоды
             </a>
-            <p class="news-info clearfix">
+            <p class="news-info">
               <a href="#" class="news-category">Политика</a>
               <span class="news-comments" aria-label="Количество комментариев">15</span>
               <time class="news-time" datetime="2020-02-23T16:34">
@@ -373,7 +373,7 @@
               Щелковского шоссе завершится
               в июне
             </a>
-            <p class="news-info clearfix">
+            <p class="news-info">
               <a href="#" class="news-category">Политика</a>
               <span class="news-comments" aria-label="Количество комментариев">15</span>
               <time class="news-time" datetime="2020-02-23T16:34">
@@ -388,7 +388,7 @@
               популярное мороженое
               у болельщиков ЧМ-2018
             </a>
-            <p class="news-info clearfix">
+            <p class="news-info">
               <a href="#" class="news-category">Политика</a>
               <span class="news-comments" aria-label="Количество комментариев">15</span>
               <time class="news-time" datetime="2020-02-23T16:34">
