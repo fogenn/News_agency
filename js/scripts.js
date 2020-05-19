@@ -29,4 +29,19 @@ $(document).ready(function () {
 
   );
 
+  $('.menu-burger').click(function (e) { 
+    $('.menu-burger,.menu').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+
+  $('.search-submit').click(function (e) {
+
+    if (!($('.search').hasClass('active'))) {
+      e.preventDefault()
+    }
+
+    $('.search').toggleClass('active');
+    $('.header-logo').slideToggle();
+  });
+
 });
