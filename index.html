@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Start Template for Skillbox.</title>
+  <title>Сайт новостного агенства</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="theme-color" content="#">
 
@@ -14,41 +14,64 @@
 
 <body>
   <header class="header">
-    <div class="header-intro">
-      <div class="container clearfix">
-        <p class="intro-desc">Самые <a class="intro-link custom-link" href="#">свежие новости</a> в реальном времени</p>
+    <div class="header__bsh">
+      <div class="header-bgc">
+        <div class="container header-intro">
+          <p class="intro-desc">Самые <a class="intro-link custom-link" href="#">свежие новости</a> в реальном времени</p>
+  
+          <div class="price-curr">
+    
+              <!-- <span class="price-curr__position eur">
+                Euro
+              </span>
+              <span class="price-curr__position usd">
+                Dollar
+              </span> -->
+    
+          </div>
+  
+          <time class="intro-time" datetime="2020-02-23Т22:45">
+            2020-02-23 22:45
+          </time>
+        </div>
+      </div>
+  
+      <div class="container header-wrapper">
+        <div class="menu-burger">
+          <span></span>
+        </div>
 
-        <time class="intro-time" datetime="2020-02-23Т22:45">
-          2020-02-23 22:45
-        </time>
+        <picture>
+          <source media="(min-width: 989px)" srcset="img/logo.png">
+          <img class="header-logo" src="img/logo-mob.png" alt="Новостное агенство">
+        </picture>
+  
+        <p class="header-information">
+          <label class="select-wrapper">
+            Выбор города
+            <select class="select">
+              <option value="msc">Москва</option>
+            </select>
+          </label>
+  
+          <time class="header-date" datetime="2020-02-23T16:34">
+            <span class="header-day">23 февраля, воскресенье</span>
+            <span class="header-time">16:34</span>
+          </time>
+  
+          <span class="header-weather">+22 &deg;C</span>
+        </p>
+  
+        <form class="header-search" action="#" method="get">
+          <div class="wrap-search">
+            <input class="search" name="search" type="text" placeholder="Поиск по сайту">
+            <button class="search-submit" type="submit" aria-label="Найти"></button>
+          </div>
+        </form>
       </div>
     </div>
-
-    <div class="container header-wrapper">
-      <img class="header-logo" src="img/logo.png" alt="Новостное агенство">
-
-      <p class="header-information">
-        <label class="select-wrapper">
-          Выбор города
-          <select class="select">
-            <option value="msc">Москва</option>
-          </select>
-        </label>
-
-        <time class="header-date" datetime="2020-02-23T16:34">
-          <span class="header-day">23 февраля, воскресенье</span>
-          <span class="header-time">16:34</span>
-        </time>
-
-        <span class="header-weather">+22 &deg;C</span>
-      </p>
-
-      <form class="header-search" action="#" method="get">
-        <input class="search" name="search" type="text" placeholder="Поиск по сайту">
-        <button class="search-submit" type="submit" aria-label="Найти"></button>
-      </form>
-
-      <nav class="menu">
+    
+    <nav class="container menu">
         <ul class="menu-list">
           <li class="menu-item">
             <a href="#">Главная </a>
@@ -63,7 +86,7 @@
             <a href="#">Экономика</a>
           </li>
           <li class="menu-item">
-            <a href="#">В мире</a>
+            <a href="#">В&nbsp;мире</a>
           </li>
           <li class="menu-item">
             <a href="#">Проишествия</a>
@@ -77,12 +100,36 @@
           <li class="menu-item">
             <a href="#">Туризм</a>
           </li>
+          <li class="menu-item">
+            <a href="#">Туризм</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Туризм</a>
+          </li>
         </ul>
-      </nav>
-    </div>
+    </nav>
   </header>
 
+  
   <main class="container main-content">
+    <div class="header-information__mob">
+        <time class="header-date" datetime="2020-02-23T16:34">
+          <span class="header-day">23 февраля, воск</span>
+          <span class="header-time">16:34</span>
+        </time>
+    
+        <span class="header-weather">+22 &deg;C</span>
+
+        <div class="price-curr price-curr__mob">
+          <!-- <span class="price-curr__position eur">
+            Euro
+          </span>
+          <span class="price-curr__position usd">
+            Dollar
+          </span> -->
+      </div>
+    </div>
+    
     <section class="news-day">
       <h2 class="news-title">Новости дня</h2>
 
@@ -93,7 +140,7 @@
             победу российской сборной
             над Египтом на ЧМ-2018
           </a>
-          <p class="news-info clearfix">
+          <p class="news-info">
             <a href="#" class="news-category">ЧМ по футболу</a>
             <span class="news-comments" aria-label="Количество комментариев">15</span>
             <time class="news-time" datetime="2020-02-23T16:34">
@@ -108,7 +155,7 @@
             заморозить активы «Газпрома»
             в Великобритании
           </a>
-          <p class="news-info clearfix">
+          <p class="news-info">
             <a href="#" class="news-category">Политика</a>
             <span class="news-comments" aria-label="Количество комментариев">15</span>
             <time class="news-time" datetime="2020-02-23T16:34">
@@ -123,7 +170,7 @@
             оборудовать общественный
             транспорт кондиционерами
           </a>
-          <p class="news-info clearfix">
+          <p class="news-info">
             <a href="#" class="news-category">Транспорт</a>
             <span class="news-comments" aria-label="Количество комментариев">15</span>
             <time class="news-time" datetime="2020-02-23T16:34">
@@ -138,7 +185,7 @@
             временно закроются из-за
             непогоды
           </a>
-          <p class="news-info clearfix">
+          <p class="news-info">
             <a href="#" class="news-category">Погода</a>
             <span class="news-comments" aria-label="Количество комментариев">15</span>
             <time class="news-time" datetime="2020-02-23T16:34">
@@ -153,7 +200,7 @@
             Щелковского шоссе завершится
             в июне
           </a>
-          <p class="news-info clearfix">
+          <p class="news-info">
             <a href="#" class="news-category">Транспорт</a>
             <span class="news-comments" aria-label="Количество комментариев">15</span>
             <time class="news-time" datetime="2020-02-23T16:34">
@@ -168,7 +215,7 @@
             популярное мороженое
             у болельщиков ЧМ-2018
           </a>
-          <p class="news-info clearfix">
+          <p class="news-info">
             <a href="#" class="news-category">ЧМ по футболу</a>
             <span class="news-comments" aria-label="Количество комментариев">15</span>
             <time class="news-time" datetime="2020-02-23T16:34">
@@ -182,7 +229,8 @@
     </section>
 
     <section class="news-main">
-      <article class="news-first clearfix">
+      <article class="news-first">
+        <img class="news-photo" src="img/photo1.jpg" alt="Крым">
         <a href="#" class="news-category">Политика</a>
         <a href="#" class="news-link">
           В Крыму отреагировали на&nbsp;слова Кравчука о&nbsp;возврате полуострова
@@ -193,10 +241,9 @@
           </time>
           <span class="news-time">16:34</span>
         </p>
-        <img class="news-photo" src="img/photo1.jpg" alt="Крым">
       </article>
 
-      <div class="news-wrapper-tiles clearfix">
+      <div class="news-wrapper-tiles">
         <article class="news">
           <img class="news-photo-tiles" src="img/photoTiles1.jpg" alt="">
           <a href="#" class="news-link">
@@ -270,26 +317,10 @@
       <a class="ads-photo" href="#">
         <img src="img/adsPhoto2.jpg" alt="">
       </a>
-
-      <div class="ads__price-curr">
-        <h2 class="ads__price-curr__title">
-          Курсы валют к рублю
-        </h2>
-        <div class="ads__price-curr__list">
-
-          <!-- <span class="ads__price-curr__position eur">
-            6848
-          </span>
-          <span class="ads__price-curr__position usd">
-            865486
-          </span> -->
-
-        </div>
-      </div>
     </aside>
 
-    <section class="wrap-news-bottom clearfix">
-      <article class="news-first clearfix">
+    <section class="wrap-news-bottom">
+      <article class="news-first">
         <a href="#" class="news-category">Политика</a>
         <a href="#" class="news-link">
           Пекин обвинил Вашингтон
@@ -320,7 +351,7 @@
               временно закроются из-за
               непогоды
             </a>
-            <p class="news-info clearfix">
+            <p class="news-info">
               <a href="#" class="news-category">Политика</a>
               <span class="news-comments" aria-label="Количество комментариев">15</span>
               <time class="news-time" datetime="2020-02-23T16:34">
@@ -335,7 +366,7 @@
               Щелковского шоссе завершится
               в июне
             </a>
-            <p class="news-info clearfix">
+            <p class="news-info">
               <a href="#" class="news-category">Политика</a>
               <span class="news-comments" aria-label="Количество комментариев">15</span>
               <time class="news-time" datetime="2020-02-23T16:34">
@@ -350,7 +381,7 @@
               популярное мороженое
               у болельщиков ЧМ-2018
             </a>
-            <p class="news-info clearfix">
+            <p class="news-info">
               <a href="#" class="news-category">Политика</a>
               <span class="news-comments" aria-label="Количество комментариев">15</span>
               <time class="news-time" datetime="2020-02-23T16:34">
@@ -364,7 +395,7 @@
   </main>
 
   <footer class="footer">
-    <div class="container clearfix">
+    <div class="container footer__wrap">
       <nav class="footer-menu">
         <ul class="footer-menu-list">
           <li class="footer-menu-list-item">

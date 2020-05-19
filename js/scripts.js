@@ -14,12 +14,12 @@ $(document).ready(function () {
       rub_eur = response.rates.RUB,
       rub_usd = response.rates.RUB / response.rates.USD;
 
-      $('.ads__price-curr__list').append(`
+      $('.price-curr').append(`
   
-        <span class="ads__price-curr__position eur">
+        <span class="price-curr__position eur">
           EUR ${rub_eur.toFixed(3)}
         </span>
-        <span class="ads__price-curr__position usd">
+        <span class="price-curr__position usd">
           USD ${rub_usd.toFixed(3)}
         </span>
 
@@ -28,5 +28,20 @@ $(document).ready(function () {
     }
 
   );
+
+  $('.menu-burger').click(function (e) { 
+    $('.menu-burger,.menu').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+
+  $('.search-submit').click(function (e) {
+
+    if (!($('.search').hasClass('active'))) {
+      e.preventDefault()
+    }
+
+    $('.search').toggleClass('active');
+    $('.header-logo').slideToggle();
+  });
 
 });
