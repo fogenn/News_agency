@@ -56,12 +56,6 @@ picture {
   border-bottom: 1px solid;
 }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1000px;
@@ -124,10 +118,6 @@ picture {
   background-size: auto 100%;
 }
 
-/* .intro-time {
-  
-} */
-
 /*header infomation*/
 
 .header-wrapper {
@@ -164,7 +154,9 @@ picture {
   font-size: 16px;
   color: #448ccb;
   border: 0;
+  background-color: transparent;
   padding-right: 20px;
+  outline: transparent;
 
   background-image: url('../img/icons/down-arrow.png');
   background-position: 100% center;
@@ -313,12 +305,6 @@ picture {
   color: #e1e1e5;
   padding-left: 20px;
 }
-
-/* .menu-item::after:not(:last-child) {
-  
-}
-
-.menu-item::after */
 
 .menu-item a {
   color: #000;
@@ -575,7 +561,6 @@ picture {
   font-size: 16px;
   background-color: #00122f;
   color: #fff;
-  clear: both;
 }
 
 .footer__wrap {
@@ -783,6 +768,9 @@ picture {
   .menu-burger {
     display: block;
     position: relative;
+    border: none;
+    background-color: transparent;
+    outline: transparent;
     width: 20px;
     height: 16px;
   }
