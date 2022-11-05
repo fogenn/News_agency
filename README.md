@@ -1,3 +1,3 @@
 # News_agency
- 
-https://github.com/fogenn/News_agency.git
+Учебный проект по вёрстке
+[Новостное агентство](https://fogenn.github.io/News_agency/)
